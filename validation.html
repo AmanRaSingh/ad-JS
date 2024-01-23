@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function mydata() {
+            var a = document.getElementById("a1").value;
+            var b = document.getElementById("a2").value;
+            var c = document.getElementById("a3").value;
+            var d = document.getElementById("a4").value;
+            if (a == "" || b == "" || c == "" || d == "") {
+                alert("All field are mendatory");
+                return false;
+            }
+            else if (b.length < 10 || b.length > 10) {
+                alert("Number should be 10 digit!  please Enter valid number");
+                return false;
+            }
+            else if (c != d) {
+                alert("please enter same number");
+                return false;
+            }
+            else {
+                return true;
+            }
+        } 
+    </script>
+    <form onsubmit="mydata()">
+        UserId: <input type="text" id="a1"><br><br>
+        contact:<input type="text" id="a2"><br><br>
+        password:<input type="password" id="a3" class="n1"><br><br>
+        confirm password:<input type="text" id="a4" class="n2"><br><br>
+        <input type="submit" style="color: red;" value="submit  data" class="n3"><br><br>
+
+    </form>
+
+</body>
+
+</html>

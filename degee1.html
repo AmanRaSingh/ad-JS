@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Degree convertor</h1>
+    <form onsubmit="return data()">
+        <input id="for">
+        <button>convert</button>
+        <p id="Convert"></p>
+    </form>
+    <script>
+        function data() {
+            var a = document.getElementById("for").value;
+            b = (a * 9 / 5) + 32;
+            // document.write(b)
+            document.getElementById("Convert").innerHTML = a + " " + " Degree Celsius " + " = " + b + " Fahrenheit";
+            return false;
+
+        }
+    </script>
+</body>
+
+</html>

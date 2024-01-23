@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        /* body {
+            background-color: rgb(233, 228, 71);
+        } */
+
+
+        .first {
+            height: 5rem;
+            width: 50rem;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            border: 1px solid red;
+            background-color: yellow;
+
+        }
+
+        #card1 {
+            height: 2.5rem;
+            width: 5rem;
+            background-color: rgb(59, 233, 201);
+            border-radius: 0.5rem;
+        }
+
+        #card2 {
+            height: 2.5rem;
+            width: 5rem;
+            background-color: rgb(59, 233, 201);
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="first">
+            <div id="card1"></div>
+            <div id="card2"></div>
+            <div id="card3"></div>
+            <div id="card4"></div>
+            <div id="card5"></div>
+            <div id="card6"></div>
+            <div id="card7"></div>
+            <div id="card8"></div>
+            <div id="card9"></div>
+            <div id="card10"></div>
+        </div>
+
+    </center>
+    <script>
+        //----- Retrieve data from session storage---------------
+
+        b = document.getElementById("card1");
+        c = document.getElementById("card2");
+        d = document.getElementById("card3");
+        e = document.getElementById("card4");
+        f = document.getElementById("card5");
+        g = document.getElementById("card6");
+        h = document.getElementById("card7");
+        i = document.getElementById("card8");
+        j = document.getElementById("card9");
+        k = document.getElementById("card10");
+
+
+        // c = document.getElementById("card1");
+
+        var v1 = sessionStorage.getItem("name") || "Not Available";
+        b.innerText = v1;
+        c.innerText = v1;
+        d.innerText = v1;
+        e.innerText = v1;
+        f.innerText = v1;
+        g.innerText = v1;
+        h.innerText = v1;
+        i.innerText = v1;
+        j.innerText = v1;
+        k.innerText = v1;
+
+
+        // d.innerText = second;
+        // document.write("name :" + first);
+
+    </script>
+</body>
+
+</html>

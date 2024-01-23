@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <style>
+        h1 {
+            color: red;
+        }
+        body {
+            background-color: rgb(117, 181, 181);
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Alarm</h1>
+        <div id="currentTime"></div>
+        <input id="alarm-clock-1" type="">
+        <button id="set-alarm">Set Alarm</button>
+    </center>
+
+    <script>
+        let clock = document.getElementById("currentTime");
+        function updateClock() {
+            let currenttime = new Date();
+            let hours = currenttime.getHours();
+            let minutues = currenttime.getMinutes();
+            let seconds = currenttime.getSeconds();
+            hours = hours < 10 ? `0${hours}` : hours;
+            minutues = minutues < 10 ? `0${minutues}` : minutues;
+            seconds = seconds < 10 ? `0${seconds}` : seconds;
+            document.getElementById('currentTime').innerText = "Current Time " + hours + ":" + minutues + ":" + seconds;
+            // var alarm1 = document.getElementById("alarm-clock-1").value;
+            console.log(alarm1);
+            if (`${hours}:${minutues}` == alarm1) {
+                alert("hello alarm");
+            }
+        }
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+
+</html>

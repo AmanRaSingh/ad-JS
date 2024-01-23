@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // -------------spread operator-------------
+
+        // let a = ["apple", "banana", "orange"];
+        // let b = ["carrot", "broccoli", "spinach"];
+        // let c = [...a, ...b];
+        // document.write(c);
+
+
+        // let array1=[1,2,3];
+        //   let array2=[5,...array1,4,6,];
+        //     console.log(...array2);
+
+            // second largest number--------------
+            let max=0;
+let a=[1,3,8,19,40];
+for(let i=0;i<a.length;i++){
+    for(let j=i+1;j<a.length;j++){
+        if(a[i]>a[j]){
+            max=a[i];
+            a[i]=[j];
+            a[j]=max;
+        }
+    }
+    document.write(a[i]," "); 
+}
+document.write("large  second ",a[a.length-2]); 
+
+// document.write(max)
+
+// let max = a[0];
+
+// for(let i=0; i<a.length; i++){
+//     if(max<a[i]){
+//         max = a[i]
+//     }
+// }
+// document.write(max)
+
+// function ascen(x){
+// let max=0
+// for(let i=0; i<x.length; i++){
+// for(let j= i+1; j<x.length; j++){
+// if(x[i]>x[j]){
+//     max= x[i]
+//     x[i]=x[j]
+//     x[j]=max
+// }
+// }
+// document.write(x[i] ," ")
+// }
+// document.write("largest second",x[x.length-2])
+// }
+// ascen([14,9,16,4,23,5])
+
+
+
+
+
+
+        // reverse without using method---------------
+        // let a = ["aman", "pro", "skill", "hub"];
+        // // a.reverse();
+        // // document.write(a);
+        // for (let i=0;i<a.length;i++) {
+        //     let a=a[0].length;
+        //     let b=a[i].lenght;
+        //      if(b<a){
+                
+        //      }
+        //     document.write(a[i].length);
+        // }
+
+
+    </script>
+</body>
+
+</html>
