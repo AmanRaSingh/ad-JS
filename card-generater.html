@@ -21,7 +21,7 @@
 <body>
     <center>
         <form onsubmit="return data()" action="card.html">
-            Enter Name = <input pattern="[A-Za-z]+" type="text" id="name">
+            Enter Name = <input  type="text" id="name">
             <input type="submit" value="login">
         </form>
 
@@ -29,18 +29,18 @@
     <script>
         function data() {
             var a = document.getElementById("name").value;
-            if (a == "") {
-                alert("field are mendetory");
+            if (a == ""|| !isNaN(a)) {
+                alert("please enter a valid string(not a number)");
                 return false;
             }
             else if (a.length < 0 || a.length > 10) {
                 alert("maximum 10 digit");
                 return false;
             }
-            else if (a == "number") {
-                alert("  only  string value");
-                return false;
-            }
+            // else if (a == "number") {
+            //     alert("  only  string value");
+            //     return false;
+            // }
             else {
                 sessionStorage.setItem("name", a);
                 return true;

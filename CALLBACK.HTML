@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // --------------callback function----------
+
+        // function fun(a, b, c) {
+        //     let d = a + b + c
+
+        //     back()
+        //     document.write(d)
+        // }
+        // function back() {
+        // }
+        // fun(10, 50, 100)
+
+
+        // function calculateCartPrice(val1,val2, ...num1) {
+        //     return val2
+        // }
+        // console.log(calculateCartPrice(50,44,200,500))
+
+        // ------------------remove a duplicate array ----------
+        // const arr = [1, 2, 4, 5, 6, 1, 4, 2, 1, 3, 2, 2];
+
+        // const result = arr.filter((val, index, self) => {
+        //     return self.indexOf(val) !== index
+        // })
+        // console.log(arr);
+        // console.log(result);
+
+        // let a = "i am aman";
+        // c = a.charAt(8)
+        // b = a.indexOf("n")
+        // console.log(b)
+        // console.log(c)
+
+        // ---Q.[67]---------callback function----------
+
+        // function call(a) {
+        //     back(a)
+        // }
+        // function back(a) {
+        //     document.write(a)
+        // }
+        // call(100)
+
+
+        // -----Q.[70]---------doing empty array-------------
+
+        // let a = [1, 2, 3, 4, 5];
+        //  a.splice(0,a.length)
+        // console.log(a)
+
+        // var a = ['a', 'b', 'c', 'd', 'e', 'f']
+        // var a = []
+        // a.length=0;
+        // console.log(a)
+        // a.splice(0, a.length)
+        // console.log(typeof(a));
+        // if (a.length == "") {
+        //     console.log('true')
+        // }
+        // else {
+        //     console.log("False")
+        // }
+        // console.log(a);
+
+
+        // function b() {
+
+        // }
+        // b()
+        // console.log(typeof (b))
+        // ---------------------array ko empty krke  value add kiya hu--------------
+        // var a = [1, 2, 3]
+        // a.length = 0;
+        // a.push("aman")
+        // console.log(a)
+
+
+        // --------------Q-[71]-----------------
+
+        // let a = ("amN");
+        // console.log(typeof a)
+
+        // if (typeof(a) == "number") {
+        //     console.log("it a number")
+        // }
+        // else {
+        //     console.log("it not a number")
+        // }
+
+        // --------------Q-[73]-----------------
+        // let a =[1,2,3,4,5]
+        // let b=[1,2,3,4,5]
+        // a.push(b);
+        // console.log(a);
+
+
+        // let a = [1, 2, 3, 4, 5]
+
+        // a = [...a, ...a]
+        // console.log(a)
+
+        // --------------Q-[74]-----------------
+
+        // const mul = (a) => {
+        //     return (b) => {
+        //         return (c) => {
+        //             return a * b * c
+        //         }
+        //     }
+        // }
+        // let d = mul(2)(3)(4)
+        // console.log(d)
+
+
+        // let mul = (a) => {
+        //     return (b) => {
+        //         return (c) => {
+        //             return a * b * c
+        //         }
+        //     }
+        // }
+        // let d = mul(4)(3)(4)
+        // console.log(d)
+
+        // --------------Q-[75]-----------------
+
+        // function addsix(a) {
+        //     return a +6
+        //  }
+
+        // console.log(addsix(10))
+
+        // function addsix(a){
+        //     return a+6
+        // }
+        // console.log(addsix(21))
+
+        // --------------Q-[76]-----------------
+
+        // for (let i = 1; i <= 100; i++) {
+        //     if (i % 3 == 0) {
+        //         document.write(i, "   fizz" + "<br>")
+        //     }
+        //     if (i % 5 == 0) {
+        //         document.write(i, "   buzz" + "<br>")
+        //     }
+        //     if (i % 3 == 0 && i % 5 == 0) {
+        //         document.write(i, "   fizzbuzz" + "<br>")
+        //     }
+        // }
+        // function createCounter() {
+        //     let count = 0;  // `count` is a private variable
+
+        //     // The returned object contains methods to interact with the private `count`
+        //     return {
+        //         increment: function () {
+        //             count++;
+        //             return count;
+        //         },
+        //         decrement: function () {
+        //             count--;
+        //             return count;
+        //         },
+        //         getValue: function () {
+        //             return count;
+        //         }
+        //     };
+        // }
+
+        // // Usage:
+        // const counter = createCounter();
+
+        // console.log(counter.getValue()); // Outputs: 0
+        // counter.increment();
+        // counter.increment();
+        // console.log(counter.getValue()); // Outputs: 2
+        // counter.decrement();
+        // console.log(counter.getValue()); // Outputs: 1
+
+        // --------------Q-[80]-----------------
+        // var y = 1;
+        // if (function f() { }) {
+        //     y += typeof f;
+        // }
+        // console.log(y);
+
+        // ------------Q-[81]-----------------
+
+        // (function () {
+        //     var a = b = 5;
+        // })();
+        // console.log(b);
+
+        // ----------Q-[82]-----------------
+        // function multiply(a) {
+        //     return function (b) {
+        //         return a * b
+        //     }
+        // }
+        // console.log(multiply(5)(6));
+        // ----------Q-[84]-----------------
+
+        // const array = [4];
+
+        // if (array.length === 0) {
+        //     console.log("The array is empty.");
+        // } else {
+        //     console.log("The array is not empty.");
+        // }
+        // ----------Q-[85/ 86]-----------------
+
+        // const fruits = [" mango ", "orange", "banana", "papaya"]
+        // newfruits = fruits[2]
+        // document.write(newfruits)
+
+        // ----------Q-[87]-----------------
+
+        // add new element in the end of array-------using push method
+        // const fruits = ['mango', "orange", 'papaya'];
+        // fruits.push("date");
+        // document.write(fruits);
+
+        // add new element in the end of array-------using unshift method
+        // const fruits = ["mango", 'orange', 'papaya']
+        // fruits.unshift("date");
+        // document.write(fruits);
+
+        // add new element in the end of array-------using splice method
+        // const fruits = ["mango", 'orange', 'papaya']
+        // fruits.splice(1, 0, "banana", 'date', 'apple')
+        // document.write(fruits);
+
+        // ----------Q-[88]-----------------
+        // remove a last Element---------
+        // const fruits = ["mango", 'orange', 'papaya']
+
+        // fruits.pop()
+        // document.write(fruits);
+
+        // const fruits = ["mango", 'orange', 'papaya']
+        // fruits.shift();
+        // document.write(fruits);
+
+        // const fruits = ["mango", 'orange', 'papaya']
+        // fruits.splice(1,1)
+        // document.write(fruits);
+
+        // ----------Q-[89]-----------------
+
+        // const fruits = ["mango", 'orange', 'papaya']
+        // document.write(fruits.length)
+
+        // const numbers = [1, 2, 3, 0, 1, 1, 2];
+        // console.log(numbers.length); // Outputs: 3
+        // Add an element
+        // numbers.push(4);
+        // console.log(numbers.length); // Outputs: 4
+
+
+        // const colors = ["red", "blue", "green"];
+        // console.log(colors.length); // Outputs: 3
+
+        // // Remove an element
+        // colors.pop();
+        // console.log(colors.length); // Outputs: 2
+
+        // const data = [10, 20, 30, 40, 50]
+        // console.log(data.length);
+        // data.length = 0;
+
+        // // console.log(data.length)
+        // console.log(data)
+
+        // ----------Q-[90]-----------------
+        // --1-{for loop} method---------
+
+        // let names = ["aman", ' singh', 'rewa', 'madhyapradesh'];
+        // let n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        // let obj = {
+        //     name: "aman",
+        //     age: 24,
+        //     city: "rewa"
+        // }
+        // document.write(obj.name)
+        // for (let i = 0; i < name.length; i++) {
+        //     document.write(name[i], "<br>");
+        // }
+
+        // --2-{for in} method---------
+        // for (let a in obj) {
+        //     console.log(a)
+        // }
+
+        // --2-{for of} method---------
+        // for (let a of obj) {
+        //     console.log(a)
+        //     document.write(obj.name)
+        // }
+
+        // ----------Q-[91]-----------------
+        // const oneDArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        // const numpair = 3;
+        // const twoDArray = [];
+        const array = [1, 2, 3, 4, 5];
+const exists = array.includes(3); // true
+console.log(exists);
+
+
+
+        // ---------------------------------------PRIME NUMBER---------------------------------
+
+
+        // for (let i = 1; i <= 100; i++) {
+        //     let temp = 0;
+        //     for (let j = 2; j <= i - 1; j++) {
+        //         if (i % j == 0) {
+        //             temp = temp + 1;
+        //         }
+        //     }
+        //     if (temp == 0) {
+        //         document.write("it's a prime number <br>  " + " " + i);
+        //     }
+        // }
+
+
+    </script>
+</body>
+
+</html>

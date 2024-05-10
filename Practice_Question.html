@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ------------------------1------------------------
+
+        // let a = [1, 2, 3, 4, 5];
+        // let b = [4, 2, 3];
+
+        // // let c = a.filter(item => b.includes(item));
+        // let c = a.filter(item => b.includes(item))
+        // console.log(c);
+
+        // ------------------------2------------------------
+
+        // Sample array of strings
+        // let strings = ["apple", "banana", "cherry", "date", "fig"];
+
+        // // Sort the array by the length of each string (from shortest to longest)
+        // strings.sort((a, b) => a.length - b.length);
+
+        // // Output the sorted array
+        // console.log(strings);
+
+        // ------------------------3------------------------
+
+        // var number = prompt("enter a number")
+        // var fact = 1;
+        // if (number == 0) {
+        //     console.log(`the factorial of ${number} is 1 `)
+        // }
+        // else if (number < 0) {
+        //     console.log("not possible negative number")
+        // }
+        // else {
+        //     for (var i = 1; i <= number; i++) {
+        //         fact = fact * i
+        //         console.log(fact)
+        //     }
+        //     console.log(`the factorial of ${number} is  ${fact} `)
+        // }
+
+        // ------------------------4------------------------
+
+        // a = 0, b = 1
+        // console.log(a);
+        // console.log(b);
+
+        // for (var i = 0; i <= 5; i++) {
+        //     temp = a + b;
+        //     a = b;
+        //     b = temp
+        //     console.log(temp)
+
+        // }
+
+        // ------------------------5------------------------
+
+        var string = prompt("enter a number")
+        var len = string.length
+
+        for (var i = 0; i < len / 2; i++) {
+            // console.log(string[i]);
+            // console.log(string[len - 1 - i]);
+
+            if (string[i] != string[len - 1 - i]) {
+                console.log()
+            }
+
+        }
+        // console.log(len)
+
+
+
+    </script>
+</body>
+
+</html>

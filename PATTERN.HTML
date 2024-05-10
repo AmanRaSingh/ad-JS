@@ -9,6 +9,33 @@
 
 <body>
     <script>
+
+
+        // ------Write a JavaScript function to check whether a string is blank or not.
+
+        function empty(str) {
+            if (str.length === 0) {
+                console.log("string is empty");  
+                return true; // The string is empty
+            }
+
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] !== ' ' && str[i] !== '\t' && str[i] !== '\n') {
+                    console.log("string is not empty");  
+                    return false; // Found a non-whitespace character
+                }
+            }
+
+            return true; // Only whitespace characters found
+        }
+
+        console.log(empty(""));  
+        console.log(empty("abc"));  
+
+
+
+        // console.log(fun("/t/n"))
+        // console.log(fun("anb"))
         // ----------------right half pyramid---{51}----------------
 
         // document.write("1 .[51]", "  ", "Right Half   Pyramid", "<br>");
@@ -33,7 +60,7 @@
         // }
 
         // ----------------full pyramid---{53}----------------
-        document.write("2 .[52]", "  ", "Left Half   Pyramid", "<br>");
+        // document.write("2 .[52]", "  ", "Left Half   Pyramid", "<br>");
 
     </script>
 </body>
