@@ -8,7 +8,16 @@
 </head>
 
 <body>
+
     <script>
+
+
+        var a = ["aman", "sanjay", "rohit", "pavan"];
+        a.sort();
+        document.write(a,"<br>")
+        a.reverse();
+        document.write(a)
+
         // ------------------------1------------------------
 
         // let a = [1, 2, 3, 4, 5];
@@ -23,10 +32,10 @@
         // Sample array of strings
         // let strings = ["apple", "banana", "cherry", "date", "fig"];
 
-        // // Sort the array by the length of each string (from shortest to longest)
+        // Sort the array by the length of each string (from shortest to longest)
         // strings.sort((a, b) => a.length - b.length);
 
-        // // Output the sorted array
+        // Output the sorted array
         // console.log(strings);
 
         // ------------------------3------------------------
@@ -63,19 +72,120 @@
 
         // ------------------------5------------------------
 
-        var string = prompt("enter a number")
-        var len = string.length
+        // var string = prompt("enter a number")
+        // var len = string.length
+        // var msg = "it is a Palidrome";
 
-        for (var i = 0; i < len / 2; i++) {
-            // console.log(string[i]);
-            // console.log(string[len - 1 - i]);
+        // for (var i = 0; i < len / 2; i++) {
+        //     // console.log(string[i]);
+        //     // console.log(string[len - 1 - i]);
 
-            if (string[i] != string[len - 1 - i]) {
-                console.log()
-            }
-
-        }
+        //     if (string[i] != string[len - 1 - i]) {
+        //         msg = "it is not a Palidrome";
+        //     }
+        // }
+        // console.log(`${string}:${msg}`)
         // console.log(len)
+
+        // ------------------------6------------------------
+        //------------------ remove a duplicate array--------
+
+
+        // let arr = [10, 20,]
+        // let newArr = [...new Set(arr)];
+        // document.write(newArr);
+
+        const arr = [1, 2, 2, 3, 4, 5, 5, 7, 7, 1];
+        const result = arr.filter((val, index, self) => {
+            return self.indexOf(val) !== index;
+        })
+        console.log(result)
+
+
+
+        // ----------------------7------------------------
+        // 7.check given number is sorted in accendind order or not
+
+
+        // ----------------------8------------------------
+        // 8.find the largest in array ?
+
+
+        // let array = [10, 40, 30, 45, 25, 15, 3, 5]
+        // array.sort((a, b) => a - b);
+
+        // document.write(array, "<br>");
+        // document.write("smallest ", array[0]);
+        // document.write("largest ", array[array.length - 1]);
+        
+        // ------------------------1------------------------
+
+        // var today = new Date();
+        // var day = today.getDay();
+        // var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday ", "Thursday", "Friday", "Saturday"];
+        // console.log("Today is : " + daylist[day] + ".");
+        // var hour = today.getHours();
+        // var minute = today.getMinutes();
+        // var second = today.getSeconds();
+        // var prepand = (hour >= 12) ? " PM " : " AM ";
+        // // hour = (hour >= 12) ? hour - 12 : hour;
+        // // if (hour === 0 && prepand === ' PM ') {
+        // //     if (minute === 0 && second === 0) {
+        // //         hour = 12;
+        // //         prepand = ' Noon';
+        // //     }
+        // //     else {
+        // //         hour = 12;
+        // //         prepand = ' PM';
+        // //     }
+        // // }
+        // // if (hour === 0 && prepand === ' AM ') {
+        // //     if (minute === 0 && second === 0) {
+        // //         hour = 12;
+        // //         prepand = ' Midnight';
+        // //     }
+        // //     else {
+        // //         hour = 12;
+        // //         prepand = ' AM';
+        // //     }
+        // // }
+        // console.log("Current Time : " + hour + prepand + " : " + minute + " : " + second);
+
+        // ------------------------2------------------------
+        // write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7
+
+        // let base=prompt("Enter a Base Value");
+        // let Height=prompt("Enter a Height Value");
+        // area=(base*Height)/2;
+        // console.log(area);
+
+
+        // var a = 10;
+        // var b = 10;
+        // var c = 10;
+        // var s = (a + b + c) / 2;
+        // var temp = s * (s - a) * (s - b) * (s - c);
+        // var area = Math.sqrt(temp);
+
+        // console.log(area);
+
+        // ------------------------5------------------------
+// Write a JavaScript program to compute the sum of the two given integers. If the two values are the same, then return triple their sum.
+
+        // function computeSumOrTriple(a, b) {
+        //     if (a === b) {
+        //         return 3 * (a + b);
+        //     } else {
+        //         return a + b;
+        //     }
+        // }
+
+        // // Example usage:
+        // const num1 = 5;
+        // const num2 = 5;
+        // const result = computeSumOrTriple(num1, num2);
+        // console.log("Result:", result);                     
+
 
 
 

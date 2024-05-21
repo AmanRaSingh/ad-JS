@@ -25,21 +25,25 @@
 
         // ------------------------arrow function-----------------
 
-        // let calculatesquare = (a) => { b = a * a ( console.log(b))}
+        // let calculatesquare = (a) => {
+        //     let  b = a * a 
+        //     console.log(b)
+        // }
+        // calculatesquare(5)
+        // -------------------Array storing Q.1-----------------------------
 
-        // -----------------------------------------Array storing Q.1-----------------------------
+        // let array = ["pro", "skill", "hub","rewa"];
+        // let y = array.sort();
+        // document.write(y);
 
-        // let array = ["pro", "skill", "hub","rewa"]
-        // let y = array.sort()
-        // document.write(y)
+        // ------------------------Q.2--------------------------------------
 
-        // -----------------------------------------Q.2--------------------------------------
         // let array = ["banana","orange","apple","grapes"]
         // let array = ["aman","ram ","lakhan ","sandhya ","rewa"]
         // let y = array.sort()
         // document.write(y)
 
-        // -------------------------Array manipulation Q.1 -----------------------------
+        // -------------Array manipulation Q.1 -----------------------------
 
         // function reverse(a) {
         //     for (let i = a.length - 1; i >= 0; i--) {
@@ -56,18 +60,17 @@
 
         // ------------------Array Mapping Q.1 ----------------------------------
 
-        // function doubleNumbers(number) {
-        //     let a = [];
-        //     for (let i = 0; i < number.length; i++) {
-        //         a.push(number[i] * 2)
-        //     }
-        //     return a;
-        // }
-        // let d = doubleNumbers([1, 2, 3, 4, 5]);
-        // document.write(d)
+        function doubleNumbers(number) {
+            let a = [];
+            for (let i = 0; i < number.length; i++) {
+                a.push(number[i] * 2)
+            }
+            return a;
+        }
+        let d = doubleNumbers([1, 2, 3, 4, 5]);
+        document.write(d)
 
-        // -Q.2-------------------
-        // -----------------Array reducing Q.1-------------------------------------
+        // -Q.2-------Array reducing Q.1-------------------------------------
 
         // function sumArray(a) {
         //     let sum = 0;
@@ -78,7 +81,7 @@
         // } 
         // sumArray([1, 10])
 
-        // ------------------------------------------Q.2---------------------------------------------
+        // --------------Q.2---------------------------------------------
 
         // function sumArray(number) {
         //     let sum = 0;
@@ -93,18 +96,18 @@
 
         // -----------------array iteration-----------------
 
-        function filternumber(array) {
-            let c = [];
-            for (let i = 0; i <= array.length; i++) {
+        // function filternumber(array) {
+        //     let c = [];
+        //     for (let i = 0; i <= array.length; i++) {
 
-                if (typeof (array[i]) == "number") {
-                    c.push(array[i]);
-                }
-            }
-            return c;
-        }
-        let d = filternumber(["pro", "skill", "hub", true, false, 1, 2, 3, 4, 5]);
-        document.write(d)
+        //         if (typeof (array[i]) == "number") {
+        //             c.push(array[i]);
+        //         }
+        //     }
+        //     return c;
+        // }
+        // let d = filternumber(["pro", "skill", "hub", true, false, 1, 2, 3, 4, 5]);
+        // document.write(d)
 
 
     </script>
