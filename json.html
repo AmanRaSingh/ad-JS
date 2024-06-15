@@ -45,9 +45,11 @@
         // }
 
 
-        // ---------------------JSON-Stringify -------------------------
 
         
+        // ---------------------JSON-Stringify() -------------------------
+        // this  is sending data web server object to string 
+
         // let obj = {
         //     name: "aman",
         //     city: "rewa",
@@ -55,7 +57,28 @@
         // }
         // document.write(JSON.stringify(obj))
 
+        // let obj = {
+        //     "hobbies": ["cricket", "football", "hockey", "Badminton"]
+        // };
+        // document.write(JSON.stringify(obj))
 
+
+        // let obj = {
+        //     "student":
+        //         [
+        //             { "id": 1, "name": "aman", "age": 55 },
+        //             { "id": 2, "name": "rohit", "age": 25 },
+        //             { "id": 3, "name": "ankush", "age": 35 }
+        //         ]
+        // };
+        // document.write(JSON.stringify(obj))
+
+        // ---------------------JSON-Parse() -------------------------
+        // this  is sending data web server string to object
+        const obj = '{"id":100,"name":"aman","city":"rewa"}';
+        const JSON_object = JSON.parse(obj);
+        document.write(JSON_object.name);
+        
     </script>
 </body>
 
